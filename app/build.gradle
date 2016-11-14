@@ -3,6 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
+    useLibrary 'org.apache.http.legacy'
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
     defaultConfig {
         applicationId "com.epicodus.myrestaurants"
         minSdkVersion 15
@@ -17,13 +24,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    useLibrary 'org.apache.http.legacy'
 }
 
-repositories {
-    mavenCentral()
-    jcenter()
-}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

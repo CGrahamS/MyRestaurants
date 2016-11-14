@@ -38,6 +38,7 @@
         android:padding="10dp"
         android:hint="Enter Zip Code"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         tools:ignore="HardcodedText" />
 
     <Button
